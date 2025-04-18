@@ -3,6 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* styles.css */
+
+/* البوكس */
+.contact-box {
+  background-color: white;   /* خلفية بيضاء */
+  color: black;              /* النص باللون الأسود */
+  padding: 20px;             /* مسافة داخلية حول النص */
+  border: 2px solid #ddd;    /* إطار خفيف حول البوكس */
+  border-radius: 10px;       /* زوايا دائرية خفيفة */
+  max-width: 500px;          /* أقصى عرض للبوكس */
+  margin: 20px auto;         /* مركز البوكس في الصفحة */
+}
+
+/* النص العنوان */
+.contact-title {
+  font-size: 24px;           /* حجم الخط */
+  font-weight: bold;         /* جعل الخط عريض */
+}
+
+/* النص العادي */
+.contact-box p {
+  font-size: 16px;           /* حجم الخط للنص العادي */
+  line-height: 1.5;          /* تباعد بين الأسطر */
+}
+
 
 body {
   font-family: 'Poppins', sans-serif;
