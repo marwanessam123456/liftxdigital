@@ -1,278 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Favicon Icon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LiftX Digital</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-      /* Reset some default styles */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LiftX Digital | Professional Digital Solutions</title>
+  
+  <!-- SEO -->
+  <meta name="description" content="LiftX Digital provides expert web design, branding, and social media management to elevate your business online." />
+  <meta name="keywords" content="LiftX Digital, Web Design, Branding, Social Media Management, Digital Agency" />
+  <meta name="author" content="LiftX Digital" />
 
-      /* Basic body styling */
-      body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #f4f4f4; /* Light gray background */
-        color: #333;
-        line-height: 1.6;
-      }
+  <!-- Open Graph -->
+  <meta property="og:title" content="LiftX Digital" />
+  <meta property="og:description" content="Professional Digital Solutions for your Business." />
+  <meta property="og:image" content="https://yourdomain.com/assets/og-image.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:type" content="website" />
 
-      /* Header Styling */
-      header {
-        background-color: #fff; /* White background */
-        padding: 20px;
-        text-align: center;
-        border-bottom: 1px solid #ddd; /* Light gray border at the bottom */
-      }
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LiftX Digital" />
+  <meta name="twitter:description" content="Professional Digital Solutions for your Business." />
+  <meta name="twitter:image" content="https://yourdomain.com/assets/og-image.jpg" />
 
-      header img {
-        height: 100px;
-        margin-bottom: 10px;
-      }
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-      nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-      }
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
-      nav ul li {
-        margin: 0 20px;
-      }
+  <!-- Styles -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-      nav ul li a {
-        color: #555; /* Dark gray color */
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 16px;
-      }
+    header {
+      background-color: white;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
 
-      nav ul li a:hover {
-        color: #333; /* Darker gray on hover */
-      }
+    header img {
+      height: 70px;
+      vertical-align: middle;
+    }
 
-      /* Hero Section Styling */
-      .hero {
-        background-color: #fff; /* White background */
-        padding: 60px 20px;
-        text-align: center;
-      }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 10px 0 0;
+      flex-wrap: wrap;
+    }
 
-      .hero h2 {
-        font-size: 32px;
-        color: #333; /* Dark text for hero */
-        margin-bottom: 20px;
-      }
+    nav ul li {
+      margin: 0 15px;
+    }
 
-      .hero p {
-        font-size: 18px;
-        color: #555;
-        margin-bottom: 40px;
-      }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-      .contact-button {
-        display: inline-block;
-        background-color: #555; /* Dark gray button */
-        color: #fff;
-        border: none;
-        padding: 12px 24px;
-        text-decoration: none;
-        font-size: 16px;
-        border-radius: 8px;
-        transition: all 0.3s ease;
-      }
+    nav a:hover {
+      color: gray;
+    }
 
-      .contact-button:hover {
-        background-color: #333; /* Darker gray on hover */
-        color: #fff;
-      }
+    .hero {
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-      /* Services Section Styling */
-      .services {
-        background-color: #f4f4f4; /* Light gray background */
-        padding: 60px 20px;
-        text-align: center;
-      }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
 
-      .services h2 {
-        font-size: 32px;
-        margin-bottom: 20px;
-        color: #333;
-      }
+    .contact-button {
+      display: inline-block;
+      background-color: white;
+      color: black;
+      border: 2px solid black;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
 
-      .service-cards {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 40px;
-      }
+    .contact-button:hover {
+      background-color: black;
+      color: white;
+    }
 
-      .service-cards .card {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        width: 30%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-        border: 1px solid #ddd;
-      }
+    .services {
+      background-color: #f9f9f9;
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-      .service-cards .card:hover {
-        transform: scale(1.05);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-      }
-
-      .card h3 {
-        font-size: 24px;
-        color: #333;
-        margin-bottom: 10px;
-      }
-
-      .card p {
-        font-size: 16px;
-        color: #666;
-      }
-
-      /* About Section Styling */
-      #about {
-        padding: 60px 20px;
-        background-color: #fff; /* White background */
-        color: #333;
-        text-align: center;
-      }
-
-      #about h2 {
-        font-size: 32px;
-        margin-bottom: 20px;
-        color: #333;
-      }
-
-      #about p {
-        font-size: 18px;
-        line-height: 1.6;
-        color: #555;
-        margin-bottom: 20px;
-      }
-
-      #about p:last-child {
-        font-size: 16px;
-        font-style: italic;
-        color: #777;
-      }
-
-      /* Footer Styling */
-      footer {
-        background-color: #555; /* Medium gray footer */
-        color: #fff;
-        padding: 40px 0;
-        text-align: center;
-      }
-
-      footer p {
-        margin: 10px 0;
-      }
-
-      footer a {
-        color: #fff; /* White color for links */
-        text-decoration: none;
-        margin: 0 10px;
-      }
-
-      footer a:hover {
-        color: #f4f4f4; /* Lighter gray on hover */
-      }
-
-      footer img {
-        width: 30px;
-        height: 30px;
-        margin: 0 10px;
-      }
-
-    </style>
-  </head>
-  <body>
-
-    <!-- Header Section -->
-    <header>
-      <img src="Logo.png" alt="LiftX Digital Logo">
-      <nav>
-        <ul>
-          <li><a href="#">LiftX Digital</a></li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <h2>Your Professional Digital Agency Solution</h2>
-      <p>We specialize in Social Media Management, Graphic Design, and Web Design to elevate your brand and online presence with impactful, creative solutions.</p>
-      <a href="mailto:liftxdigital@gmail.com" class="contact-button">Contact Us</a>
-      <p>Feel free to reach out to us anytime.</p>
-    </section>
-
-    <!-- Services Section -->
-   <!-- Services Section -->
-<section id="services" class="services" style="padding: 60px 20px; background-color: #f2f2f2;">
-  <div style="max-width: 1000px; margin: auto;">
-    <h2 style="text-align: center; font-size: 32px; margin-bottom: 30px;">Our Services</h2>
-    
-    <div style="
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .service-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
-    ">
-      <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-        <h3 style="margin-bottom: 10px;">Web Development</h3>
-        <p>Custom websites tailored to your business needs, optimized for performance and growth.</p>
-      </div>
+      margin-top: 30px;
+    }
 
-      <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-        <h3 style="margin-bottom: 10px;">Branding</h3>
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    #about {
+      padding: 60px 20px;
+      background-color: #eaeaea;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #ddd;
+      padding: 40px 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    footer a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    footer img {
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      .service-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LiftX Digital",
+      "url": "https://yourdomain.com",
+      "logo": "https://yourdomain.com/assets/logo.png",
+      "sameAs": ["https://www.instagram.com/liftxdigital/"],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+201159272244",
+        "contactType": "Customer Service",
+        "email": "liftxdigital@gmail.com"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="Logo.png" alt="LiftX Digital Logo" />
+    <nav>
+      <ul>
+        <li><a href="#">LiftX Digital</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <h2>Your Professional Digital Agency Solution</h2>
+    <p>We specialize in Social Media Management, Graphic Design, and Web Design to elevate your brand and online presence with impactful, creative solutions.</p>
+    <a href="mailto:liftxdigital@gmail.com" class="contact-button">Contact Us</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Custom websites that meet your business needs, optimized for performance and growth.</p>
+      </div>
+      <div class="card">
+        <h3>Branding</h3>
         <p>We create powerful and memorable brand identities that engage your audience.</p>
       </div>
-
-      <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-        <h3 style="margin-bottom: 10px;">Digital Marketing</h3>
-        <p>Boost your online presence with data-driven and targeted marketing campaigns.</p>
+      <div class="card">
+        <h3>Digital Marketing</h3>
+        <p>Maximize your online presence with targeted digital marketing strategies and campaigns.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- About Us -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      At <strong>LiftX Digital</strong>, we are passionate about helping businesses thrive in the digital age.
+      We specialize in <strong>Social Media Management</strong>, <strong>Graphic Design</strong>, and <strong>Web Design</strong>.
+      Our team blends creativity with performance to deliver standout digital solutions that elevate your brand.
+    </p>
+    <p style="margin-top: 40px; font-style: italic;">— Eng. Marwan Essam, CEO of LiftX Digital</p>
+  </section>
 
-    <!-- About Us Section -->
-    <section id="about">
-      <h2>About Us</h2>
-      <p>
-        At <strong>LiftX Digital</strong>, we are passionate about helping businesses thrive in the digital age.
-        We specialize in <strong>Social Media Management</strong>, <strong>Graphic Design</strong>, and <strong>Web Design</strong>.
-        Our team blends creativity with performance to deliver standout digital solutions that elevate your brand.
-      </p>
-      <p>— Eng. Marwan Essam, CEO of LiftX Digital</p>
-    </section>
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2025 LiftX Digital. All Rights Reserved.</p>
+    <p>
+      <a href="https://www.instagram.com/liftxdigital/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+      </a>
+    </p>
+    <p>Email: <a href="mailto:liftxdigital@gmail.com">liftxdigital@gmail.com</a></p>
+    <p>Phone: <a href="tel:+201159272244">+201159272244</a></p>
+  </footer>
 
-    <!-- Footer Section -->
-    <footer>
-      <p>&copy; 2025 LiftX Digital. All Rights Reserved.</p>
-      <p>Follow Us:
-        <a href="https://www.instagram.com/liftxdigital/" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"/>
-        </a>
-      </p>
-      <p>Contact Us: <a href="mailto:liftxdigital@gmail.com">contact@liftxdigital.me</a></p>
-      <p>Phone: <a href="tel:+201159272244">+201159272244</a></p>
-    </footer>
-
-  </body>
+</body>
 </html>
