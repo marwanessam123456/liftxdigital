@@ -5,6 +5,15 @@
 }
 <head>
   <style>
+.service-cards .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-cards .card:hover {
+  transform: translateY(-10px); /* Makes the card "bob" upwards */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
     /* You can paste it here */
     .contact-button {
       display: inline-block;
